@@ -1,9 +1,9 @@
-"use server";
-
 import { GetNezhaData } from "@/lib/serverFetch";
 import { ServerStackIcon } from "@heroicons/react/20/solid";
 import DottedMap from "dotted-map";
 import Link from "next/link";
+
+export const revalidate = 60
 
 interface GlobalProps {
   countries?: string[]; // 国家代码数组，如 ['CN', 'US']
