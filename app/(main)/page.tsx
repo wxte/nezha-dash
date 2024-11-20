@@ -1,14 +1,13 @@
 import ServerList from "@/components/ServerList";
 import ServerOverview from "@/components/ServerOverview";
-
-export const runtime = "edge";
-
 import { Loader } from "@/components/loading/Loader";
 import { ServerStackIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 import { Suspense } from "react";
 
 import ServerGlobal from "./ClientComponents/Global";
+
+export const runtime = "edge";
 
 export default async function Home({
   searchParams,
